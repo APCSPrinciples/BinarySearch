@@ -40,12 +40,14 @@ public void draw()
   fill(0);
   text("Number at [index]",120,40);
   text("[index]",150,80);
-  text("Try to find "+numToFind,135,120);
-  text("Number of Guesses "+numGuesses, 115, 160);
+  textSize(32);
+  text("Try to find: "+numToFind,140,160);
+  text("Number of Guesses: "+numGuesses, 500, 160);
   if (numFound) 
-    text("Number found after " + numGuesses + " guesses. Refresh browser to play again", 255, 200);
+    text("Number found after " + numGuesses + " guesses\nRefresh browser to play again", 400, 240);
   else if (notInList())
-    text("Number not in list. Refresh browser to play again", 215, 200);
+    text("Number not in list. Refresh browser to play again", 400, 240);
+  textSize(10);
 }
 public class SearchButton
 {
